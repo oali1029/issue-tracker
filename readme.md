@@ -30,20 +30,22 @@ This project demonstrates backend API development, relational data modeling, con
 
 ## Project Structure
 
+```
 issue-tracker/
 ├── app/
 │   ├── main.py          # FastAPI entry point
 │   ├── database.py      # DB connection & retry logic
 │   ├── models.py        # SQLAlchemy models
 │   ├── crud.py          # Database operations
-│   ├── analytics.py    # Issue analytics queries
-│   └── auth.py         # Password hashing utilities
+│   ├── analytics.py     # Issue analytics queries
+│   └── auth.py          # Password hashing utilities
 ├── tests/
 │   └── test_basic.py
 ├── Dockerfile
 ├── docker-compose.yml
 ├── requirements.txt
 └── README.md
+```
 
 
 ---
@@ -63,23 +65,31 @@ git clone https://github.com/YOUR_USERNAME/issue-tracker.git
 cd issue-tracker
 ```
 ### Build and run containers
-
+```
 docker compose up --build
-
+```
 ### Access the API
-
+```
 http://localhost:8000/docs
-
+```
 ### API Endpoints
 
-Create a User:
-    POST /users/
+Create a user:
+```
+POST /users/
+```
 
 Create an issue:
-    POST /issues/
+```
+POST /issues/
+```
 
 Close an issue:
-    POST /issues/{issue_id}/close
+```
+POST /issues/{issue_id}/close
+```
 
-View Analytics:
-    GET /analytics/
+View analytics:
+```
+GET /analytics/
+```
