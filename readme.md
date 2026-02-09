@@ -89,7 +89,5 @@ Close an issue:
 POST /issues/{issue_id}/close
 ```
 
-View analytics:
-```
-GET /analytics/
-```
+View Analytics:
+    GET /analytics/
